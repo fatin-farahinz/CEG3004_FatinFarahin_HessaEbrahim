@@ -1,12 +1,12 @@
-# 🎧 Environmental Sound Classification (CEG3004 Project)
+# Environmental Sound Classification (CEG3004 Project)
 
-## 📌 Overview
+## Overview
 
 This project implements a robust audio classification pipeline for Environmental Sound Classification using Digital Signal Processing (DSP) techniques and machine learning. The system is designed to perform accurately under clean, noisy, and band-limited conditions.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 * Train on labeled environmental sound data
 * Extract meaningful DSP-based audio features
@@ -15,7 +15,7 @@ This project implements a robust audio classification pipeline for Environmental
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 The dataset is derived from the ESC-50 dataset and contains:
 
@@ -32,15 +32,15 @@ The dataset is derived from the ESC-50 dataset and contains:
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
-### 🔹 Preprocessing
+### Preprocessing
 
 * Audio loading and resampling
 * Normalization
 * Noise handling (if applied)
 
-### 🔹 Feature Extraction (DSP)
+### Feature Extraction (DSP)
 
 The following features were extracted:
 
@@ -51,7 +51,7 @@ The following features were extracted:
 * Zero Crossing Rate
 * Spectral Rolloff
 
-### 🔹 Model
+### Model
 
 * Feature Scaling using StandardScaler
 * Dimensionality Reduction (PCA) *(if used)*
@@ -59,7 +59,7 @@ The following features were extracted:
 
 ---
 
-## 🧠 Experiments & Improvements
+## Experiments & Improvements
 
 | Experiment | Change                   | Result |
 | ---------- | ------------------------ | ------ |
@@ -70,7 +70,7 @@ The following features were extracted:
 
 ---
 
-## 📊 Results
+## Results
 
 * Clean Accuracy: XX%
 * Noisy Accuracy: XX%
@@ -95,59 +95,5 @@ The following features were extracted:
 ├── README.md
 ├── requirements.txt
 ```
-
----
-
-## 🚀 Installation
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## ▶️ How to Run
-
-1. Open the notebook in Google Colab
-2. Set your `TEAM_ID` correctly
-3. Upload or mount dataset
-4. Run all cells sequentially
-5. Outputs generated:
-
-   * `prediction.csv`
-   * `model.joblib`
-
----
-
-## 🔁 Reproducibility
-
-* Python version: 3.x
-* Libraries listed in `requirements.txt`
-* Fixed random seed used *(if applicable)*
-
----
-
-## ⚠️ Important Notes
-
-* Do NOT modify clip IDs
-* Ensure correct TEAM_ID before running
-* Follow submission format strictly
-
----
-
-## 👩‍💻 Author / Team
-
-* Name: Hessa Ebrahim
-* Course: BEng Computer Engineering
-* Module: CEG3004
-
----
-
-## 📌 Future Improvements
-
-* Deep learning models (CNN on spectrograms)
-* Data augmentation techniques
-* Real-time audio classification
-
 ---
 
