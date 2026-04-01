@@ -8,7 +8,6 @@ This repository contains the final implementation for the CEG3004 DSP project on
 
 The system classifies 50 environmental sound classes using an improved DSP-based feature extraction pipeline and an SVM classifier with dimensionality reduction and class balancing.
 
----
 
 ## Files
 - `CEG3004_Project_Colab.ipynb` — final Colab notebook
@@ -16,7 +15,6 @@ The system classifies 50 environmental sound classes using an improved DSP-based
 - `Pr_08_predictions.csv` — prediction output
 - `README.md` — project documentation
 
----
 
 ## Pipeline
 
@@ -33,7 +31,6 @@ The code also includes optional augmentation support for robustness experiments,
 - mild pitch shifting
 - slight speed perturbation
 
----
 
 ### Feature Extraction
 The final feature set includes:
@@ -57,7 +54,6 @@ Feature pooling is done using:
 
 This expanded feature set was designed to capture both timbral and spectral variations in environmental sounds more effectively than a baseline MFCC-only approach.
 
----
 
 ## Model
 The final model is:
@@ -76,7 +72,6 @@ Hyperparameters explored include:
 
 The final configuration was selected based on validation Macro-F1.
 
----
 
 ## Experiments
 The baseline notebook was improved through:
@@ -90,12 +85,10 @@ The baseline notebook was improved through:
 
 These experiments were carried out to improve generalization and robustness across the 50 sound classes.
 
----
 
 ## Best Validation Result
 **Macro-F1: 0.6675720945720945**
 
----
 
 ## Reproducibility
 To run the project:
@@ -108,8 +101,6 @@ To run the project:
 6. Build the training feature matrix
 7. Train the model using grid search
 8. Generate the submission CSV
-
----
 
 ## Outputs
 The notebook generates:
