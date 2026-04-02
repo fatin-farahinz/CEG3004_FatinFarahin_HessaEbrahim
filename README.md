@@ -11,9 +11,23 @@ The system classifies 50 environmental sound classes using an improved DSP-based
 
 ## Files
 - `CEG3004_Project_Colab.ipynb` — final Colab notebook
+- `ceg3004_project_colab.py` — Python script version of the notebook
 - `Pr_08_model.joblib` — trained final model
 - `Pr_08_predictions.csv` — prediction output
 - `README.md` — project documentation
+
+
+## Dependencies
+
+The project requires the following Python libraries:
+
+- numpy
+- pandas
+- librosa
+- scikit-learn
+- imbalanced-learn
+- matplotlib
+- joblib
 
 
 ## Pipeline
@@ -91,22 +105,28 @@ These experiments were carried out to improve generalization and robustness acro
 
 
 ## Reproducibility
-To run the project:
 
-1. Open the notebook in Google Colab
-2. Run the cells from top to bottom
-3. Install the required dependencies
-4. Download and extract the dataset through the notebook
-5. Set the correct `GROUP_ID`
-6. Build the training feature matrix
-7. Train the model using grid search
-8. Generate the submission CSV
+The project was implemented and tested using Google Colab.
+
+Steps to reproduce the results:
+
+1. Clone or download this repository.
+2. Open the notebook `CEG3004_Project_Colab.ipynb` in Google Colab.
+3. Install required dependencies if not already installed.
+4. Set the correct GROUP_ID at the top of the notebook.
+5. Run all cells sequentially from top to bottom.
+
+The notebook will automatically:
+- download and prepare the dataset
+- extract DSP features
+- train the classification model
+- generate the final prediction CSV
+- save the trained model file
 
 ## Outputs
 The notebook generates:
-- prediction CSV file
-- trained `.joblib` model file
 
-- `Pr_08_predictions.csv`
+- prediction CSV file (`Pr_08_predictions.csv`)
+- trained model file (`Pr_08_model.joblib`)
 
 Only the model file and prediction CSV are required for submission.
